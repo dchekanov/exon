@@ -1,0 +1,32 @@
+{
+  "name": "@keleran/exon",
+  "version": "1.0.0",
+  "description": "Exchange Online PowerShell interface module",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "keywords": [
+    "Exchange Online"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dchekanov/exon.git"
+  },
+  "author": {
+    "name": "Dmitry Chekanov",
+    "email": "d.chekanov@gmail.com",
+    "url": "https://dmitrychekanov.com/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dchekanov/exon/issues"
+  },
+  "homepage": "https://github.com/dchekanov/exon#readme",
+  "engines": {
+    "node": "14"
+  },
+  "devDependencies": {
+    "eslint": "^7.20.0"
+  }
+}
