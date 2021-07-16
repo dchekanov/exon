@@ -76,7 +76,7 @@ class Exon {
       const timeout = setTimeout(() => {
         this.log('spawn-ps-timeout', stdout);
         this.detachPsEventHandlers();
-        reject(new Error('Timeout'));
+        reject(new Error('pwsh spawn timeout'));
       }, this.params.timeouts?.spawn || 5000);
 
       this.ps = childProcess.spawn('pwsh');
@@ -110,6 +110,10 @@ class Exon {
    * Stop listening for stdout/stderr and process errors once the outcome of an operation is known.
    */
   detachPsEventHandlers() {
+    if (!this.ps) {
+      return;
+    }
+
     this.ps.stdout.removeAllListeners('data');
     this.ps.stderr.removeAllListeners('data');
     this.ps.removeAllListeners('error');

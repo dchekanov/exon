@@ -1,6 +1,6 @@
 {
   "name": "@keleran/exon",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Exchange Online PowerShell interface module",
   "files": [
     "index.js"
@@ -27,6 +27,6 @@
     "node": "14"
   },
   "devDependencies": {
-    "eslint": "^7.20.0"
+    "eslint": "^7.30.0"
   }
 }
